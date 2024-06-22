@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_background"
+    tools:context=".TemperatureHumiditySensorInfoActivity">
+
+    <TextView
+        android:id="@+id/temperatureHumidityTextView"
+        android:layout_width="380dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:text="@string/temperature_and_humidity_sensor_description"
+        android:textColor="@color/white"
+        android:layout_height="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250sp"
+        android:layout_height="150sp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/dht11" />
+
+    <TextView
+        android:id="@+id/dht11_description"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:text="@string/the_dht11_sensor_allows_users_to_effortlessly_track_indoor_climate_conditions_this_sensor_is_perfect_for_maintaining_optimal_living_environments_detecting_both_temperature_c_and_himidity_ppm_levels_users_can_place_the_sensor_in_various_rooms_to_monitor_comfort_and_safety_receiving_real_time_data_and_alerts_the_dht11_sensor_is_user_friendly_and_highly_relieble_empowering_users_to_optimize_their_home_s_ambiance_efficiently"
+        android:textColor="@color/white"
+        android:layout_height="400dp"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back" />
+
+
+
+</LinearLayout>

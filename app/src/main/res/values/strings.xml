@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">ESP32_HomeMonitoringApp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to login !</string>
+    <string name="click_to_register">Click to register !</string>
+    <string name="logout">logout\n</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="sensor_values">Sensor Values</string>
+    <string name="toggle_sensors">Toggle Sensors</string>
+    <string name="set_time_interval_for_sensors">Set time interval for sensors</string>
+    <string name="realtime_sensor_values">Realtime Sensor Values</string>
+    <string name="back">Back</string>
+    <string name="activate_or_deactivate_sensors">Activate or deactivate sensors</string>
+    <string name="set_time_for_sensors_to_stay_active">Set time for sensors to stay active</string>
+    <string name="temperature">Temperature:</string>
+    <string name="loading">Loading...</string>
+    <string name="gas_ppm">Gas ppm:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="temperature1">Temperature:</string>
+    <string name="fire">Fire:</string>
+    <string name="vibrations">Vibrations:</string>
+    <string name="flames">Flames:</string>
+    <string name="motion">Motion:</string>
+    <string name="local_service_label">local_service_label:</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="enable_or_disable_sensors">Enable or Disable Sensors</string>
+    <string name="temperature_sensor">Temperature Sensor</string>
+    <string name="gas_sensor">Gas Sensor</string>
+    <string name="humiditysensor">HumiditySensor</string>
+    <string name="flame_sensor">Flame Sensor</string>
+    <string name="vibrations_sensor">Vibrations Sensor</string>
+    <string name="motion_sensor">Motion Sensor</string>
+    <string name="local_service_started">Local service started</string>
+    <string name="local_service_stopped">Service stopped\n</string>
+    <string name="sensor_description">Sensor Description</string>
+    <string name="show_description">Show Description</string>
+    <string name="humidity_sensor">Humidity Sensor</string>
+    <string name="temperature_sensor_description">Temperature Sensor Description</string>
+    <string name="humidity_sensor_description">Humidity Sensor Description</string>
+    <string name="gas_sensor_description">Gas Sensor Description</string>
+    <string name="flame_sensor_description">Flame Sensor Description</string>
+    <string name="motion_sensor_description">Motion Sensor Description</string>
+    <string name="vibration_sensor_description">Vibration Sensor Description</string>
+    <string name="temperature_and_humidity_sensor_description">Temperature and Humidity Sensor Description</string>
+    <string name="the_dht11_sensor_allows_users_to_effortlessly_track_indoor_climate_conditions_this_sensor_is_perfect_for_maintaining_optimal_living_environments_detecting_both_temperature_c_and_himidity_ppm_levels_users_can_place_the_sensor_in_various_rooms_to_monitor_comfort_and_safety_receiving_real_time_data_and_alerts_the_dht11_sensor_is_user_friendly_and_highly_relieble_empowering_users_to_optimize_their_home_s_ambiance_efficiently">The DHT11 sensor allows users to effortlessly track indoor climate conditions. This sensor is perfect for maintaining optimal living environments, detecting both temperature (°C) and himidity (ppm) levels. Users can place the sensor in various rooms to monitor comfort and safety, receiving real-time data and alerts. The DHT11 sensor is user-friendly and highly relieble, empowering users to optimize their home\'s ambiance efficiently.</string>
+    <string name="the_arduino_vibration_sensor_allows_users_to_detect_vibrations_within_their_home_this_sensor_is_perfect_for_detecting_structural_shifts_or_break_ins_users_can_place_the_sensor_near_windows_or_various_rooms_to_monitor_safety_receiving_real_time_data_and_alerts">The Arduino vibration sensor allows users to detect vibrations within their home. This sensor is perfect for detecting structural shifts or break-ins. Users can place the sensor near windows or various rooms to monitor safety, receiving real-time data and alerts.</string>
+    <string name="the_arduino_flame_sensor_can_quickly_identify_the_presence_of_a_flame_or_fire_this_sensor_is_perfect_for_detecting_potential_hazards_users_can_place_the_sensor_in_high_risk_areas_such_as_kitchens_garages_or_near_fireplaces_the_application_sends_real_time_data_and_alerts_in_case_of_fire_or_flames_helping_the_users_to_increase_security_for_their_goods">The Arduino flame sensor can quickly identify the presence of a flame or fire. This sensor is perfect for detecting potential hazards. Users can place the sensor in high-risk areas such as kitchens, garages, or near fireplaces. The application sends real-time data and alerts in case of fire or flames, helping the users to increase security for their goods.</string>
+    <string name="the_arduino_mq2_sensor_allows_users_to_detect_gas_leaks_and_ensure_air_quality_this_versatile_sensor_identifies_gases_such_as_lpg_methane_smoke_and_carbon_monoxide_making_it_ideal_for_kitchens_garages_and_other_areas_prone_to_gas_accumulation_users_receive_real_time_data_and_alerts_for_maintaining_a_safe_living_environment">The Arduino MQ2 sensor allows users to detect gas leaks and ensure air quality. This versatile sensor identifies gases such as LPG, methane, smoke, and carbon monoxide, making it ideal for kitchens, garages, and other areas prone to gas accumulation. Users receive real-time data and alerts for maintaining a safe living environment.</string>
+    <string name="the_arduino_hc_sr501_ir_sensor_enables_users_to_detect_motion_for_enhanced_security_this_sensor_is_ideal_for_monitoring_entrances_hallways_data_centers_and_other_critical_areas_alerting_users_to_any_movement_detected_the_application_helps_users_to_receive_real_time_data_and_alerts_it_is_recommended_to_be_disabled_if_used_in_locations_with_pets_present">The Arduino HC-SR501 IR sensor, enables users to detect motion for enhanced security. This sensor is ideal for monitoring entrances, hallways, data centers, and other critical areas, alerting users to any movement detected. The application helps users to receive real-time data and alerts. It is recommended to be disabled if used in locations with pets present.</string>
+    <string name="gas_senzor">Gas Sensor</string>
+    <string name="application_menu">Application Menu</string>
+
+
+</resources>

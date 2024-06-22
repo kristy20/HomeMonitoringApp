@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_background"
+    tools:context=".MotionSensorInfoActivity">
+
+    <TextView
+        android:id="@+id/motionTextView"
+        android:layout_width="280dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:text="@string/motion_sensor_description"
+        android:textColor="@color/white"
+        android:layout_height="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250sp"
+        android:layout_height="150sp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/hcsr501_ir" />
+
+    <TextView
+        android:id="@+id/dht11_description"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:text="@string/the_arduino_hc_sr501_ir_sensor_enables_users_to_detect_motion_for_enhanced_security_this_sensor_is_ideal_for_monitoring_entrances_hallways_data_centers_and_other_critical_areas_alerting_users_to_any_movement_detected_the_application_helps_users_to_receive_real_time_data_and_alerts_it_is_recommended_to_be_disabled_if_used_in_locations_with_pets_present"
+        android:textColor="@color/white"
+        android:layout_height="400dp"
+        />
+    <Button
+        android:id="@+id/backButton"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back" />
+</LinearLayout>

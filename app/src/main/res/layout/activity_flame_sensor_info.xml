@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_background"
+    tools:context=".FlameSensorInfoActivity">
+
+    <TextView
+        android:id="@+id/flameTextView"
+        android:layout_width="280dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:text="@string/flame_sensor_description"
+        android:textColor="@color/white"
+        android:layout_height="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250sp"
+        android:layout_height="150sp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/senzor_de_flacara_infrarosu" />
+
+    <TextView
+        android:id="@+id/dht11_description"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:text="@string/the_arduino_flame_sensor_can_quickly_identify_the_presence_of_a_flame_or_fire_this_sensor_is_perfect_for_detecting_potential_hazards_users_can_place_the_sensor_in_high_risk_areas_such_as_kitchens_garages_or_near_fireplaces_the_application_sends_real_time_data_and_alerts_in_case_of_fire_or_flames_helping_the_users_to_increase_security_for_their_goods"
+        android:textColor="@color/white"
+        android:layout_height="400dp"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back" />
+</LinearLayout>

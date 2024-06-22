@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599760659891",
+    "project_id": "homemonitoringapplogindata",
+    "storage_bucket": "homemonitoringapplogindata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599760659891:android:76dd7c70ae539436e0d7c6",
+        "android_client_info": {
+          "package_name": "com.example.esp32_homemonitoringapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBWogswK1AG5xHdxlcWYqdiI8CAPLbPpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

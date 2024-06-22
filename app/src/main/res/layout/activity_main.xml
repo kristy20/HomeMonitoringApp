@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="@string/application_menu" />
+    <TextView
+        android:id="@+id/userDetails"
+        android:layout_width="280dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_height="60dp"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sensorValues"
+        android:text="@string/sensor_values"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/toggleSensors"
+        android:text="@string/toggle_sensors"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/setTime"
+        android:text="@string/sensor_description"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+
+    <Button
+        android:id="@+id/logout"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="175dp"
+        android:text="@string/logout" />
+
+</LinearLayout>

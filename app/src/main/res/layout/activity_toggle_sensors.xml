@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_background"
+    tools:context=".ToggleSensorsActivity">
+
+    <TextView
+        android:id="@+id/toggleSensors"
+        android:layout_width="280dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        android:text="@string/enable_or_disable_sensors"
+        android:textColor="@color/white"
+        android:layout_height="70dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewTemperatureSensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/temperature_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleTemperatureButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+    <TextView
+        android:id="@+id/textViewGasSensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/gas_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleGasButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+    <TextView
+        android:id="@+id/textViewHumiditySensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/humidity_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleHumidityButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+    <TextView
+        android:id="@+id/textViewFlameSensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="@string/flame_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleFlameButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+
+    <TextView
+        android:id="@+id/textViewVibrationsSensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/vibrations_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleVibrationsButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+
+    <TextView
+        android:id="@+id/textViewMotionSensor"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/motion_sensor" />
+
+    <ToggleButton
+        android:id="@+id/toggleMotionButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="120dp"
+        android:textColor="@color/black"
+        android:background="@color/purple"
+        android:layout_marginTop="-50dp"
+        android:text="@string/togglebutton" />
+
+    <Button
+        android:id="@+id/backToggleButton"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/back" />
+
+
+
+</LinearLayout>

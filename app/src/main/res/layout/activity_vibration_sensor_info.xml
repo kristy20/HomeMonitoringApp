@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_background"
+    tools:context=".VibrationSensorInfoActivity">
+
+    <TextView
+        android:id="@+id/vibrationTextView"
+        android:layout_width="280dp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/vibration_sensor_description"
+        android:textColor="@color/white"
+        android:layout_height="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250sp"
+        android:layout_height="150sp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/sensor_vibratii" />
+    <TextView
+        android:id="@+id/dht11_description"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:text="@string/the_arduino_vibration_sensor_allows_users_to_detect_vibrations_within_their_home_this_sensor_is_perfect_for_detecting_structural_shifts_or_break_ins_users_can_place_the_sensor_near_windows_or_various_rooms_to_monitor_safety_receiving_real_time_data_and_alerts"
+        android:textColor="@color/white"
+        android:layout_height="400dp"
+        />
+    <Button
+        android:id="@+id/backButton"
+        android:background="@color/purple"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/back" />
+
+</LinearLayout>
