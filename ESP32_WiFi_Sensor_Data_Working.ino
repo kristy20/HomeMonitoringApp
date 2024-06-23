@@ -1,8 +1,3 @@
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 03_FR_DB_ESP32_DHT11_LED
-/*
- *  Reference : https://randomnerdtutorials.com/esp32-firebase-realtime-database/
- */
-
 //======================================== Including the libraries.
 #if defined(ESP32)
   #include <WiFi.h>
@@ -145,7 +140,7 @@ void store_data_to_firebase_database() {
  
   digitalWrite(On_Board_LED, HIGH);
   
-  // Write an Int number on the database path DHT11_Data/Temperature.
+  // Write a Int number on the database path DHT11_Data/Temperature.
   if (Firebase.RTDB.setFloat(&fbdo, "DHT11_Data/Temperature", Temp_Val)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -156,7 +151,7 @@ void store_data_to_firebase_database() {
     Serial.println("REASON: " + fbdo.errorReason());
   }
   
-  // Write an Float number on the database path DHT11_Data/Humidity.
+  // Write a Float number on the database path DHT11_Data/Humidity.
   if (Firebase.RTDB.setInt(&fbdo, "DHT11_Data/Humidity", Humd_Val)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -167,6 +162,7 @@ void store_data_to_firebase_database() {
     Serial.println("REASON: " + fbdo.errorReason());
   }
 
+  // Write a Float number on the database path DGasSensor/ppm.
   if (Firebase.RTDB.setFloat(&fbdo, "GasSensor/ppm", ppm)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -177,6 +173,7 @@ void store_data_to_firebase_database() {
     Serial.println("REASON: " + fbdo.errorReason());
   }
 
+  // Write a Float number on the database FlacaraSensor/Flacara.
   if (Firebase.RTDB.setFloat(&fbdo, "FlacaraSensor/Flacara", Flacara)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -187,6 +184,8 @@ void store_data_to_firebase_database() {
     Serial.println("REASON: " + fbdo.errorReason());
   }
 
+
+  // Write a Float number on the database path VibrationSensor/Vibrations.
   if (Firebase.RTDB.setFloat(&fbdo, "VibrationSensor/Vibrations", Vibratii)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -196,7 +195,7 @@ void store_data_to_firebase_database() {
     Serial.println("FAILED");
     Serial.println("REASON: " + fbdo.errorReason());
   }
-
+  // Write a Float number on the database path MotionSensor/Motion.
   if (Firebase.RTDB.setFloat(&fbdo, "MotionSensor/Motion", Infrarosu)) {
     Serial.println("PASSED");
     Serial.println("PATH: " + fbdo.dataPath());
@@ -214,7 +213,6 @@ void store_data_to_firebase_database() {
 
 
 void setup() {
-  // put your setup code here, to run once:
   
   Serial.begin(115200);
   Serial.println();
@@ -240,8 +238,6 @@ void setup() {
   Serial.println();
   Serial.print("Successfully connected to : ");
   Serial.println(WIFI_SSID);
-  //Serial.print("IP : ");
-  //Serial.println(WiFi.localIP());
   Serial.println("---------------");
   //---------------------------------------- 
 
@@ -282,8 +278,6 @@ void setup() {
 
 //________________________________________________________________________________ VOID LOOP
 void loop() {
-  // put your main code here, to run repeatedly:
-  
   if (Firebase.ready() && signupOK && (millis() - sendDataPrevMillis > sendDataIntervalMillis || sendDataPrevMillis == 0)){
     sendDataPrevMillis = millis();
     read_Flaracara();
