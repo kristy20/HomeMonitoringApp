@@ -50,15 +50,14 @@ public class ToggleSensorsActivity extends AppCompatActivity {
             return insets;
         });
 
-    logoutBtn = findViewById(R.id.backToggleButton);
-    tglHumidity= findViewById(R.id.toggleHumidityButton);
-    tglTemperature = findViewById(R.id.toggleTemperatureButton);
-    tglFlame = findViewById(R.id.toggleFlameButton);
-    tglGas = findViewById(R.id.toggleGasButton);
-    tglVibrations = findViewById(R.id.toggleVibrationsButton);
-    tglMotion = findViewById(R.id.toggleMotionButton);
+        logoutBtn = findViewById(R.id.backToggleButton);
+        tglHumidity= findViewById(R.id.toggleHumidityButton);
+        tglTemperature = findViewById(R.id.toggleTemperatureButton);
+        tglFlame = findViewById(R.id.toggleFlameButton);
+        tglGas = findViewById(R.id.toggleGasButton);
+        tglVibrations = findViewById(R.id.toggleVibrationsButton);
+        tglMotion = findViewById(R.id.toggleMotionButton);
 
-        //////////////////////////////////////////////////////////////////////////////
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://homemonitoringapplogindata-default-rtdb.europe-west1.firebasedatabase.app/");
         DatabaseReference myToggleGasSensorRef = database.getReference("ToggleButtons/Gas");
         DatabaseReference myToggleHumiditySensorRef = database.getReference("ToggleButtons/Humidity");
@@ -69,7 +68,6 @@ public class ToggleSensorsActivity extends AppCompatActivity {
 
 
 
-        ////////////////////////////////////////////////////////////////////////////// SAVE BUTTON STATE
         SharedPreferences sharedHumidityPreferences = getSharedPreferences("saveHumidity",MODE_PRIVATE);
 
         tglHumidity.setChecked(sharedHumidityPreferences.getBoolean("valueHumidity",true));
@@ -207,10 +205,6 @@ public class ToggleSensorsActivity extends AppCompatActivity {
                 }
             }
         });
-        //////////////////////////////////////////////////////////////////////////////
-
-
-
 
 
         tglHumidity.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

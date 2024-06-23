@@ -107,7 +107,7 @@ public class SensorValuesActivity extends AppCompatActivity {
 
                             double gasValue = Double.parseDouble(gasSensorValue);
                             if (gasValue >= 500 && gasValue <= 550) {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
+                                // Verifica daca myToggleGasSensorRef este true inainte de a apela makeGasNotification()
                                 myToggleGasSensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
@@ -142,7 +142,6 @@ public class SensorValuesActivity extends AppCompatActivity {
                 // A esuat citirea valorii
             }
         });
-        // Read from the database
 
 
         myToggleHumiditySensorRef.addValueEventListener(new ValueEventListener() {
@@ -153,13 +152,11 @@ public class SensorValuesActivity extends AppCompatActivity {
                     myHumiditySensorRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            // Acest cod este apelat o data cu valoarea initiala si apoi de cate ori se actualizeaza datele
                             String humiditySensorValue  = dataSnapshot.getValue().toString();
                             humidity.setText(humiditySensorValue );
 
                             double humidityValue = Double.parseDouble(humiditySensorValue);
                             if (humidityValue >= 90 && humidityValue <= 90.5) {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
                                 myToggleHumiditySensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
@@ -203,13 +200,11 @@ public class SensorValuesActivity extends AppCompatActivity {
                     myTemperatureSensorRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            // Acest cod este apelat o data cu valoarea initiala si apoi de cate ori se actualizeaza datele
                             String temperatureSensorValue = dataSnapshot.getValue().toString();
                             temperature.setText(temperatureSensorValue);
 
                             double tempValue = Double.parseDouble(temperatureSensorValue);
                             if (tempValue >= 50 && tempValue <= 50.5) {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
                                 myToggleTemperatureSensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
@@ -254,12 +249,9 @@ public class SensorValuesActivity extends AppCompatActivity {
                     myFireSensorRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            // This method is called once with the initial value and again
-                            // whenever data at this location is updated.
                             String fireSensorValue  = dataSnapshot.getValue().toString();
                             if(fireSensorValue.equals("0"))
                             {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
                                 myToggleFireSensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
@@ -310,12 +302,9 @@ public class SensorValuesActivity extends AppCompatActivity {
                     myVibrationsSensorRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            // This method is called once with the initial value and again
-                            // whenever data at this location is updated.
                             String vibrationSensorValue = dataSnapshot.getValue().toString();
                             if(vibrationSensorValue.equals("1"))
                             {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
                                 myToggleVibrationsSensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
@@ -367,12 +356,9 @@ public class SensorValuesActivity extends AppCompatActivity {
                     myMotionSensorRef.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            // This method is called once with the initial value and again
-                            // whenever data at this location is updated.
                             String motionSensorValue = dataSnapshot.getValue().toString();
                             if(motionSensorValue.equals("1"))
                             {
-                                // Verifica daca myToggleSensorRef este true inainte de a apela makeMotionNotification()
                                 myToggleMotionSensorRef.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot toggleSnapshot) {
